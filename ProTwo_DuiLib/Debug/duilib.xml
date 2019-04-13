@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,600" mininfo="600,400" caption="0,0,0,228" sizebox="4,4,4,4"> <!-- 窗口的初始尺寸(宽800，高600)、窗口的最小尺寸(宽600，高400)、标题栏拖拽区域(高32)、可拖拽边框大小(这里添加sizebox后就可以拖拽边框调整大小了) -->
+    <VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FF00AAA0"> <!-- 整个窗口的背景色   获得一个渐变的背景窗口界面-->
+        <!--<HorizontalLayout height="32"/>
+        <!-- 标题栏区 -->
+        <HorizontalLayout height="32" bkcolor="#FFE6E6DC" bkcolor2="#FF00AAA0"> <!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个值-->         
+            <VerticalLayout /> <!-- 占空位，占据左边所有的空位  <VerticalLayout />水平方向上的占位  <HorizontalLayout />表示垂直方向上的占位 -->
+            <VerticalLayout width="77"> <!-- 右边三个控件所占的宽度,控制按钮不被放大或者缩小-->
+                <Button name="minbtn"   tooltip="最小化" float="true" pos="0,5,22,24"  width="23" normalimage=" file='SysBtn\MinNormal.bmp' " hotimage=" file='SysBtn\MinFocus.bmp' " pushedimage=" file='SysBtn\MinFocus.bmp' "/>
+                <Button name="maxbtn"   tooltip="最大化" float="true" pos="22,5,44,24" width="23" normalimage=" file='SysBtn\MaxNormal.bmp' " hotimage=" file='SysBtn\MaxFocus.bmp' " pushedimage=" file='SysBtn\MaxFocus.bmp' " />
+                <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="22,5,44,24" width="23" normalimage=" file='SysBtn\StoreNormal.bmp' " hotimage=" file='SysBtn\StoreFocus.bmp' " pushedimage=" file='SysBtn\StoreFocus.bmp' " />
+                <Button name="closebtn" tooltip="关闭"   float="true" pos="44,5,74,24" width="28" normalimage=" file='SysBtn\CloseNormal.bmp' " hotimage=" file='SysBtn\CloseFocus.bmp' " pushedimage=" file='SysBtn\CloseFocus.bmp' "/>
+                <!-- Button的样式介绍：
+                name="closebtn"     唯一标识按钮，其他按钮的name不能与其重复
+                tooltip="关闭"       就是那个提示条的文字
+                float="true"        代表按钮的位置是绝对定位，其位置由pos属性指定
+                pos="44,5,74,24"    代表按钮的位置矩阵，分别为矩阵左、上、右、下四个点
+                width="28"   代表按钮图片显示的宽度（这个可以不填，但是由于按钮图片没有做好，如果不填的话，图片会被拉伸有点失真）
+                normalimage         代表正常状态下按钮显示的图片路径
+                hotimage            代表鼠标移上去时，按钮显示的图片路径     
+                pushedimage         代表鼠标点击按钮时，按钮显示的图片路径 -->
+            </VerticalLayout>      
+        </HorizontalLayout>
+        
+        <!-- 客户区 -->
+        <HorizontalLayout>
+           <Button name="btnHello" text="Hello World"/>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
