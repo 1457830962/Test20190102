@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <VerticalLayout enabled="true" width="400" height="400" bkcolor="#FF00FF00" bkcolor2="#00A6CAF0">
+    <HorizontalLayout enabled="true" height="30" bkcolor="#FF0000FF" bkcolor2="#00A6CAF0">
+      <VerticalLayout enabled="true" height="30" />
+      <VerticalLayout enabled="true" width="77" height="30">
+        <Button name="minbtn"   tooltip="最小化" float="true" pos="0,6,0,0"  height="19" width="23"  normalimage=" file='SysBtn\MinNormal.bmp' " hotimage=" file='SysBtn\MinFocus.bmp' " pushedimage=" file='SysBtn\MinFocus.bmp' "/>
+        <Button name="maxbtn"   tooltip="最大化" float="true" pos="22,6,0,0" height="19" width="23" normalimage=" file='SysBtn\MaxNormal.bmp' " hotimage=" file='SysBtn\MaxFocus.bmp' " pushedimage=" file='SysBtn\MaxFocus.bmp' " />
+        <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="22,6,0,0" height="19" width="23" normalimage=" file='SysBtn\StoreNormal.bmp' " hotimage=" file='SysBtn\StoreFocus.bmp' " pushedimage=" file='SysBtn\StoreFocus.bmp' " />
+        <Button name="closebtn" tooltip="关闭"   float="true" pos="44,6,0,0" height="19" width="28" normalimage=" file='SysBtn\CloseNormal.bmp' " hotimage=" file='SysBtn\CloseFocus.bmp' " pushedimage=" file='SysBtn\CloseFocus.bmp' "/>
+      </VerticalLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
